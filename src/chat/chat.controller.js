@@ -19,11 +19,11 @@ exports.startNewChat = async (req, res) => {
   const response = await configuration.chat.completions.create({
     model: "gpt-3.5-turbo",
     messages: [
-      { "role": "system", "content": "Your name is Mike, you are a digital assistant. do your best to assisst the users" },
+      { "role": "system", "content": "Your are a clone of donald trump, you speak just like him, you have the same mindset [keep you messages shorter than 4 sentences]" },
       { "role": "user", "content": prompt }
     ]
   });
-  say.speak( response.choices[0].message.content);
+  say.speak( response.choices[0].message.content, "Good News", 1.5);
 
   sendSuccessResponse(res, response.choices[0].message.content)
 }

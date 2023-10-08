@@ -3,5 +3,5 @@ POST http://127.0.0.1:3000/chat/startNewChat HTTP/1.1
 content-type: application/json 
 
 {
-    "message": "hello, i am having trouble sleeping, do you have any recomendations"
+    "message": "Why did you think the elections were rigged"
 }
