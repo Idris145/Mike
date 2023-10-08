@@ -13,5 +13,6 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/', require('@mike/static/static.routes'));
+app.use('/chat', require('@mike/chat/chat.routes'));
 
 module.exports = app;
