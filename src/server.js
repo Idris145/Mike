@@ -1,4 +1,4 @@
-const app = require('./app');
+const app = require('@mike/app');
 const LOG = require('@hivecloudsolutions/hive-common/helpers/logger');
 
 const port = process.env.PORT_CLIENT || 3000;
